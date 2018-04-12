@@ -18,5 +18,5 @@ echo "hello world<br/>";
 printf("golang1 says: %s<br/>\n", getUrlContent("http://golang1"));
 printf("golang2 says: %s<br/>\n", getUrlContent("http://golang2"));
 $es=json_decode(getUrlContent("http://elasticsearch:9200/_cluster/health"), true);
-printf("Elasticsearch health: %s<br/>\n", $es['status']);
+printf("Elasticsearch number of nodes: %s<br/>\n", $es['number_of_nodes']);
 ?>
